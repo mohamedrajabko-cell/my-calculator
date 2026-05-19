@@ -1,17 +1,16 @@
-let display = document.getElementById("display");
-
-function add(value) {
-  display.value += value;
+function append(value) {
+  document.getElementById("display").value += value;
 }
 
-function clearAll() {
-  display.value = "";
+function clearDisplay() {
+  document.getElementById("display").value = "";
 }
 
-function calc() {
+function calculate() {
+  let display = document.getElementById("display");
   try {
     display.value = eval(display.value);
-  } catch {
+  } catch (error) {
     display.value = "Error";
   }
 }
