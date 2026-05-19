@@ -45,3 +45,7 @@ button {
 button:hover {
   background: #6a6a90;
 }
+
+button:active {
+  transform: scale(0.95);
+}
