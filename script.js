@@ -9,5 +9,9 @@ function clearAll() {
 }
 
 function calc() {
-  display.value = eval(display.value);
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = "Error";
+  }
 }
