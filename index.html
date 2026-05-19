@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="calc">
-  <input id="display" disabled>
+
+  <input id="display" disabled placeholder="0">
 
   <div class="buttons">
+
     <button onclick="add('1')">1</button>
     <button onclick="add('2')">2</button>
     <button onclick="add('3')">3</button>
@@ -24,13 +27,17 @@
     <button onclick="add('7')">7</button>
     <button onclick="add('8')">8</button>
     <button onclick="add('9')">9</button>
-    <button onclick="calc()">=</button>
+    <button onclick="add('*')">*</button>
 
     <button onclick="add('0')">0</button>
+    <button onclick="add('/')">/</button>
+    <button onclick="calc()">=</button>
     <button onclick="clearAll()">C</button>
+
   </div>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
